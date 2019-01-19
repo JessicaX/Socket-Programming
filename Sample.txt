@@ -1,0 +1,107 @@
+Sample 1:
+If you type in the client end: ./client 9002 "245 549 +"
+You will receive below from the client end:
+Client received final: 794.000000
+You will receive below from the server end:
+Server Received:"245 549 +"
+
+Sample 2:
+If you type in the client end: ./client 9002 "25 5 * 60 +"
+You will receive below from the client end:
+Client received: 125.000000
+Client received final: 185.000000
+You will receive below from the server end:
+Server Received:"25 5 *"
+Server Received:"125 60 +"
+
+Sample 3:
+If you type in the client end: ./client 9002 "1 2 3 / +"
+You will receive below from the client end:
+Client received: 0.666667
+Client received final: 1.666667
+You will receive below from the server end:
+Server Received:"2 3 /"
+Server Received:"1 0.666667 +"
+
+Sample 3:
+If you type in the client end: ./client 9002 "1 31 7 / -"
+You will receive below from the client end:
+Client received: 4.285714
+Client received final: -3.285710
+You will receive below from the server end:
+Server Received:"30 7 /"
+Server Received:"1 4.28571 -"
+
+Sample 3:
+If you type in the client end: ./client 9002 " 1 31 7/-"
+You will receive below from the client end:
+Client received: 4.285714
+Client received final: -3.285710
+You will receive below from the server end:
+Server Received:"30 7 /"
+Server Received:"1 4.28571 -"
+
+Sample 3:
+If you type in the client end: ./client 9002 " 1 31 7/- 5 /"
+You will receive below from the client end:
+Client received: 4.428571
+Client received: -3.428570
+Client received final: -0.685714
+You will receive below from the server end:
+Server Received:"31 7 /"
+Server Received:"1 4.42857 -"
+Server Received:"-3.42857 5 /"
+
+Sample 6:
+If you type in the client end: ./client 9002 "100 20 7 + + +"
+You will receive below from the client end:
+Client received: 27.000000
+Client received: 127.000000
+Not enough operands in expression
+You will receive below from the server end:
+Server Received:"20 7 +"
+Server Received:"100 27 +"
+Server Received:"100"
+
+Sample 6:
+If you type in the client end: ./client 9002 "20 0 /"
+You will receive below from the client end:
+Client received final: inf
+You will receive below from the server end:
+Server Received:"20 0 /"
+
+Sample 4:
+If you type in the client end: ./client 9002 "1 3"
+You will receive below from the client end: 
+(nothing will be shown and you have to input again!)
+You will receive below from the server end:
+(nothing will be calculated and you have to input again!)
+
+Sample 5:
+If you type in the client end: ./client 9002 "1 2 3 +"
+You will receive below from the client end:
+Client received final: 5.000000
+You will receive below from the server end:
+Server Received:"2 3 +"
+
+Sample 6:
+If you type in the client end: ./client 9002 " 1# 31+"
+You will receive below from the client end:
+Invalid input: contain other characters.
+You will receive below from the server end:
+(Nothing, waiting for new input)
+
+Sample 6:
+If you type in the client end: ./client 9002 
+You will receive below from the client end:
+You forgot to specify the port number. And please type the input in double quots after the port number with a space in between. 
+You will receive below from the server end:
+(Nothing, waiting for new input)
+
+Sample 6:
+If you type in the client end: ./client 9002 
+You will receive below from the client end:
+You forgot to type the input in double quots after the port number with a space in between.
+You will receive below from the server end:
+(Nothing, waiting for new input)
+
